@@ -91,6 +91,10 @@ public class Appointments{
 				String hospital_name = rs.getString("hospital_name");
 				Date date = rs.getDate("date");
 				String payment_type = rs.getString("payment_type");
+				
+				username = username.replace('+',' ');
+				doctor_name = doctor_name.replace('+',' ');
+				hospital_name = hospital_name.replace('+',' ');
 
 				// Add into the html table
 				output += "<tr><td><input id='hidAppointUpdate' name='hidAppointUpdate' type='hidden' "

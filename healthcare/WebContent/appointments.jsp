@@ -16,11 +16,13 @@
 <body>
 	<div class="container">
 	
-		<h1 class="text-center">Add New Appointment</h1>
+		<div style="background-color: #ffba52;">
+    		<h2 class="text-center" style="padding: 20px;color: rgb(243,243,243);">Add New Appointment</h2>
+		</div>
 		
 		<div class="row">
-			<div class="col-4">
-				
+			
+			<div class="col-4" >
 				<form id="formAppointments" name="formAppointments">
 				
 					Patient Name: <input id="username" name="username" type="text"
@@ -53,7 +55,7 @@
 				
 				<br>
 				
-				<div id="divAppointmentsGrid" class="col-8" >
+				<div id="divAppointmentsGrid" class="col-8" style=" padding-top: 10px;">
 					<%
 						Appointments appObj = new Appointments();
 						out.print(appObj.readAppointments());
