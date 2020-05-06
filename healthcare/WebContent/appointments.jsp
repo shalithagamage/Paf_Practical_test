@@ -15,10 +15,11 @@
 
 <body>
 	<div class="container">
+	
+		<h1 class="text-center">Add New Appointment</h1>
+		
 		<div class="row">
 			<div class="col-4">
-				
-				<h1>Add New Appointment</h1>
 				
 				<form id="formAppointments" name="formAppointments">
 				
@@ -43,11 +44,14 @@
 					<input type="hidden" id="hidAppIDSave" name="hidAppIDSave" value="">
 					
 				</form>
+				
 				<br>
 				<div id="alertSuccess" class="alert alert-success"></div>
 				<div id="alertError" class="alert alert-danger"></div>
 				
 				</div>
+				
+				<br>
 				
 				<div id="divAppointmentsGrid" class="col-8" >
 					<%
